@@ -245,7 +245,7 @@ button:focus {
   font-size: 18px;
   line-height: 24px;
   font-family: "Arial";
-  font-weight: 700;
+  font-weight: 400;
 }
 .button:hover {
   background-color: #4D9F30;
@@ -456,7 +456,7 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 980px;
-  padding: 41px 143px 61px 144px;
+  padding: 41px 102px 61px 102px;
   background: #FFFFFF;
   border: 1px solid #1D1D1D;
   border-radius: 20px;
@@ -645,11 +645,12 @@ button:focus {
   background-color: #1D1D1D;
 }
 .about__inner {
-  width: 100%;
+  width: 95%;
   padding: 65px 150px 65px 100px;
   border: 1px solid #FFFFFF;
   border-radius: 200px 200px 200px 0;
   background-color: transparent;
+  margin: 0 auto;
 }
 
 .theme {
@@ -2159,6 +2160,10 @@ button:focus {
     right: 0;
   }
 
+  .autor {
+    padding: 80px 0 60px 0;
+  }
+
   .list__couch {
     width: auto;
   }
@@ -2178,6 +2183,9 @@ button:focus {
 @media (max-width: 414px) {
   .text--program {
     margin: 0;
+  }
+  .text--about {
+    padding: 0 20px;
   }
 
   .intro__img {
@@ -2203,7 +2211,11 @@ button:focus {
   }
 
   .about__inner {
-    padding: 30px 15px 40px 15px;
+    padding: 30px 0 40px 0;
+  }
+
+  .list__about {
+    padding: 0 20px;
   }
 
   .buy__more--item:nth-child(1) {

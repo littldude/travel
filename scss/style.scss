@@ -237,7 +237,7 @@ button:focus {
     font-size: 18px;
     line-height: 24px;
     font-family: 'Arial';
-    font-weight: 700;
+    font-weight: 400;
     &:hover {
         background-color: $greend;
         transition: .2s linear;
@@ -421,7 +421,7 @@ button:focus {
         flex-direction: column;
         align-items: center;
         width: 980px;
-        padding: 41px 143px 61px 144px;
+        padding: 41px 102px 61px 102px;
         background: #FFFFFF;
         border: 1px solid $dark;
         border-radius: 20px;
@@ -520,11 +520,12 @@ button:focus {
     padding: 55px 0 90px 0;
     background-color: $dark;
     &__inner {
-        width: 100%;
+        width: 95%;
         padding: 65px 150px 65px 100px;
         border: 1px solid #FFFFFF;
         border-radius: 200px 200px 200px 0;
         background-color: transparent;
+        margin: 0 auto;
     }
 }
 .theme {
@@ -1848,6 +1849,9 @@ button:focus {
             }
         }
     }
+    .autor {
+        padding: 80px 0 60px 0;
+    }
     .list {
         &__couch {
             width: auto;
@@ -1867,6 +1871,9 @@ button:focus {
     .text {
         &--program {
             margin: 0;
+        }
+        &--about {
+            padding: 0 20px;
         }
     }
     .intro {
@@ -1896,7 +1903,12 @@ button:focus {
     }
     .about {
         &__inner {
-            padding: 30px 15px 40px 15px;
+            padding: 30px 0 40px 0;
+        }
+    }
+    .list {
+        &__about {
+            padding: 0 20px;
         }
     }
     .buy {
