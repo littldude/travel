@@ -444,7 +444,7 @@ button:focus {
 }
 .training {
     overflow: hidden;
-    padding: 70px 0 451px 0;
+    padding: 70px 0 150px 0;
     background-color: $dark;
     &__inner {
         margin: 50px 0 150px 0;
@@ -467,25 +467,17 @@ button:focus {
         }
     }
     &__line {
-        overflow: hidden;
-        width: 100vw;
-        padding: 31px;
-        display: flex;
         &--green {
-            background-color: $greend;
-            transform: rotate(10deg);
+            overflow: hidden;
         }
         &--red {
-            margin-top: -154px;
-            background-color: $red;
-            transform: rotate(-10deg);
+            overflow: hidden;
         }
         &--inner {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-           // animation: line infinite 15s linear;
         }
         &--item {
             display: flex;
@@ -745,6 +737,59 @@ button:focus {
         }
     }
 }
+#marquee1 {
+    padding: 30px 0;
+    transform-origin: 700px -500px;
+    transform: rotate(10deg);
+    background-color: $greend;
+    width: 150%;
+}
+#marquee2 {
+    padding: 30px 0;
+    // transform-origin: center 500px;
+    transform-origin: 1570px 700px;
+    transform: rotate(-10deg);
+    background-color: $red;
+    width: 150%;
+}
+#marquee3 {
+    padding: 15px 0;
+    // transform-origin: center 500px;
+    transform-origin: center 700px;
+    transform: rotate(-10deg);
+    background-color: $red;
+    width: 150%;
+}
+#marquee4 {
+    padding: 15px 0;
+    transform-origin: center -500px;
+    transform: rotate(10deg);
+    background-color: $greend;
+    width: 150%;
+}
+.marquee {
+    overflow: hidden;
+    font-size: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: default;
+    user-select: none;
+    transform: rotate(10deg);
+    //width: 105vw;
+    transform-origin: 0 0;
+    &--m {
+        display: none;
+    }
+}
+.marquee__inner {
+    white-space: nowrap;
+    display: inline-flex;
+    svg {
+        margin-left: 30px;
+        flex: 0 0 auto;
+    }
+}
 .list {
     &__autor {
         margin-top: 40px;
@@ -823,6 +868,7 @@ button:focus {
             height: 100%;
             object-fit: fill;
             border-radius: 100px 0px;
+            
         }
         &::before {
             display: block;
@@ -837,6 +883,9 @@ button:focus {
             right: -23px;
         }
     }
+}
+.mirror {
+    transform: scale(-1, 1);
 }
 .review {
     padding: 60px 0 80px 0;
@@ -971,17 +1020,6 @@ button:focus {
         }
     }
 }
-@keyframes line {
-    0% {
-        transform: translateX(-150%);
-    }
-    50% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(101%);
-    }
-}
 @media (max-width: 1366px) {
     .problem {
         &::before {
@@ -992,9 +1030,6 @@ button:focus {
                 display: none;
             }
         }
-    }
-    .training {
-        padding: 70px 0 390px 0;
     }
 }
 @media (max-width: 1240px) {
@@ -1266,6 +1301,14 @@ button:focus {
             padding: 60px 100px 65px 65px;
         } 
     }
+    .marquee {
+        &--m {
+            display: inline-flex;
+        }
+        &--d {
+            display: none;
+        }
+    }
 }
 @media (max-width: 900px) {
     .training {
@@ -1439,6 +1482,12 @@ button:focus {
     .about {
         &__inner {
             border-radius: 60px 60px 0px 60px;
+        }
+    }
+    .training {
+        padding: 70px 0 90px 0;
+        &__inner {
+            margin: 50px 0;
         }
     }
     .review {
@@ -1695,9 +1744,9 @@ button:focus {
         }
     }
     .training {
-        padding: 30px 0 380px 0;
+        padding: 30px 0;
         &__inner {
-            margin: 20px 0 150px 0;
+            margin: 20px 0 45px 0;
             &--img {
                 width: 40px;
                 height: 40px;
@@ -1707,6 +1756,21 @@ button:focus {
                 padding: 0 55px 30px 55px;
             }
         }
+    }
+    #marquee3 {
+        padding: 5px 0;
+        transform-origin: 150px 700px;
+    }
+    .marquee {
+        &__inner {
+            svg {
+                margin-left: 4px;
+            }
+        }
+    }
+    #marquee4 {
+        padding: 5px 0;
+        transform-origin: 790px -500px;
     }
     .about {
         padding: 30px 0;
@@ -1910,6 +1974,12 @@ button:focus {
         &__about {
             padding: 0 20px;
         }
+    }
+    #marquee3 {
+        transform-origin: 0 300px;
+    }
+    #marquee4 {
+        transform-origin: 745px -100px;
     }
     .buy {
         &__more {
