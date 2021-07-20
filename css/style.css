@@ -107,7 +107,7 @@ button:focus {
   margin-bottom: 30px;
 }
 .title--buy {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .subtitle {
@@ -117,7 +117,7 @@ button:focus {
   color: #1D1D1D;
 }
 .subtitle--program {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .subtitle--game {
   width: 100px;
@@ -145,29 +145,29 @@ button:focus {
   background-color: #4D9F30;
   color: #ffffff;
   border-radius: 20px;
-  padding: 4px 7px;
+  padding: 2px 7px;
 }
 .text--bgr {
   background-color: #FF3333;
   color: #ffffff;
   border-radius: 20px;
-  padding: 4px 7px;
+  padding: 2px 7px;
 }
 .text--bgb {
   background-color: #1D1D1D;
   color: #ffffff;
   border-radius: 20px;
-  padding: 4px 7px;
+  padding: 2px 7px;
   border: 1px #ffffff solid;
 }
 .text--bgw {
   background: #FFFFFF;
   border: 1px solid #1D1D1D;
   border-radius: 20px;
-  padding: 4px 7px;
+  padding: 2px 7px;
 }
 .text--problem {
-  margin: 32px 0 40px 0;
+  margin: 10px 0 30px 0;
 }
 .text--white {
   color: #ffffff;
@@ -222,15 +222,38 @@ button:focus {
 .text--mob {
   display: none;
 }
+.text--list {
+  margin-bottom: 15px;
+}
+.text--small {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.link {
+  color: #FF3333;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link:hover {
+  color: #4D9F30;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
 
 .small {
   display: block;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   width: 530px;
-  margin: 20px auto 36px auto;
+  margin: 0 auto 36px auto;
   color: #000000;
+}
+.small--more {
+  margin-top: 20px;
 }
 
 .button {
@@ -259,6 +282,11 @@ button:focus {
   margin: 0 auto;
 }
 .button--buy {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin: 40px auto 0 auto;
 }
 
@@ -317,7 +345,15 @@ button:focus {
   position: relative;
 }
 .intro__block--item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 29px 42px;
   width: 266px;
   height: 131px;
@@ -398,7 +434,7 @@ button:focus {
   margin-left: auto;
   padding: 63px 134px 63px 167px;
   width: 880px;
-  height: 508px;
+  height: auto;
   background: #FFFFFF;
   border: 1px solid #1D1D1D;
   border-radius: 300px 300px 0px 300px;
@@ -641,7 +677,7 @@ button:focus {
 }
 
 .theme {
-  padding: 100px 0 390px 0;
+  padding: 100px 0 450px 0;
   position: relative;
   overflow: hidden;
 }
@@ -824,6 +860,13 @@ button:focus {
   background-position-x: center;
   background-position-y: center;
 }
+.transfer .img5 {
+  background-image: url("../img/transfer/home.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  background-position-y: center;
+}
 
 .bus {
   padding: 32px 73px 32px 93px;
@@ -873,9 +916,6 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
 .more__inner--item:nth-child(1) {
@@ -970,6 +1010,9 @@ button:focus {
           flex: 0 0 auto;
 }
 
+.list__about {
+  margin: 20px 0 30px 0;
+}
 .list__autor {
   margin-top: 40px;
 }
@@ -1146,6 +1189,9 @@ button:focus {
   border-left: 31px solid #ffffff;
   -webkit-transform: scale(1, -1);
   transform: scale(1, -1);
+}
+.review__more {
+  display: none;
 }
 
 .footer {
@@ -1438,6 +1484,13 @@ button:focus {
   .couch__img::before {
     top: -10px;
     right: -10px;
+  }
+
+  .button--buy {
+    position: static;
+    margin: 30px auto 0 auto;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media (max-width: 992px) {
@@ -1929,8 +1982,15 @@ button:focus {
   .title--program::after {
     display: none;
   }
+  .title--about {
+    font-size: 24px;
+    line-height: 34px;
+  }
   .title--training::after {
     content: url("../img/training/star-green-m.svg");
+  }
+  .title--buy {
+    margin-top: 40px;
   }
 
   .subtitle {
@@ -2167,6 +2227,9 @@ button:focus {
   .transfer .img4 {
     background-size: 40%;
   }
+  .transfer .img5 {
+    background-size: 40%;
+  }
 
   .bus {
     width: 76px;
@@ -2248,9 +2311,6 @@ button:focus {
   .text--program {
     margin: 0;
   }
-  .text--about {
-    padding: 0 20px;
-  }
 
   .intro__img {
     margin-top: 30px;
@@ -2275,11 +2335,7 @@ button:focus {
   }
 
   .about__inner {
-    padding: 30px 0 40px 0;
-  }
-
-  .list__about {
-    padding: 0 20px;
+    padding: 30px 20px 40px 20px;
   }
 
   #marquee3 {
