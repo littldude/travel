@@ -229,6 +229,12 @@ button:focus {
   font-size: 50px;
   font-weight: 400;
 }
+.text--margin {
+  margin-top: 15px;
+}
+.text--left {
+  margin-left: -5px;
+}
 
 .link {
   color: #FF3333;
@@ -364,6 +370,7 @@ button:focus {
 }
 .intro__block--item:nth-child(2) {
   position: absolute;
+  padding: 29px 82px;
   right: -5px;
   width: 407px;
   height: 131px;
@@ -518,11 +525,11 @@ button:focus {
 
 .training {
   overflow: hidden;
-  padding: 70px 0 150px 0;
+  padding: 70px 0 225px 0;
   background-color: #1D1D1D;
 }
 .training__inner {
-  margin: 50px 0 150px 0;
+  margin: 50px 0 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
