@@ -1172,7 +1172,7 @@ button:focus {
 }
 .review__block--right::after {
   position: absolute;
-  top: 20%;
+  top: 90px;
   left: 200px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1186,7 +1186,7 @@ button:focus {
 }
 .review__block--left::after {
   position: absolute;
-  top: 10%;
+  top: 90px;
   right: 200px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);

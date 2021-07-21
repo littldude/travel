@@ -966,7 +966,7 @@ button:focus {
             padding: 33px 24px 22px 53px;
             &::after {
                 position: absolute;
-                top: 20%;
+                top: 90px;
                 left: 200px;
                 -webkit-transform: translateY(-50%);
                     -ms-transform: translateY(-50%);
@@ -981,7 +981,7 @@ button:focus {
             padding: 33px 55px 22px 35px;
             &::after {
                 position: absolute;
-                top: 10%;
+                top: 90px;
                 right: 200px;
                 -webkit-transform: translateY(-50%);
                     -ms-transform: translateY(-50%);
