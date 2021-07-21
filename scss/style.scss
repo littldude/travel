@@ -465,13 +465,13 @@ button:focus {
         &--text {
             margin-bottom: 5px;
             &:nth-child(3) {
-                transform: rotate(1deg);
+                transform: rotate(0.01rad);
             }
             &:nth-child(5) {
-                transform: rotate(1deg);
+                transform: rotate(0.01rad);
             }
             &:nth-child(6) {
-                transform: rotate(-1deg);
+                transform: rotate(-0.01rad);
             }
         }
     }
@@ -555,7 +555,7 @@ button:focus {
     }
 }
 .theme {
-    padding: 100px 0 450px 0;
+    padding: 100px 0 420px 0;
     position: relative;
     overflow: hidden;
     &::before {
@@ -727,6 +727,7 @@ button:focus {
 .more {
     padding: 98px 0 49px 0;
     position: relative;
+
     &::before {
         content: url('../img/more/more-img-l.svg');
         display: block;
@@ -998,6 +999,9 @@ button:focus {
     &__more {
         display: none;
     }
+}
+.hide {
+    display: none;
 }
 .footer {
     background-color: #ffffff;
@@ -1608,6 +1612,7 @@ button:focus {
         }
     }
     .more {
+        overflow: hidden;
         &__inner {
             flex-direction: column;
             align-items: center;
@@ -1727,6 +1732,9 @@ button:focus {
             line-height: 18px;
             padding: 20px;
         }
+        &--m {
+            font-weight: 700;
+        }
     }
     .button {
         &--buy {
@@ -1737,23 +1745,32 @@ button:focus {
         padding: 20px 0;
         background-image: url('../img/intro/intro-bg-m.svg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         &::before {
             display: none;
         }
         &__block {
             margin: 15px 0 20px 0;
             &--item {
+                border: none;
+                background-color: transparent;
+                border-radius: none;
                 &:nth-child(1) {
-                    width: 266px;
-                    height: 59px;
+                    width: auto;
+                    padding: 2px 7px;
+                    border-radius: 20px;
+                    height: auto;
+                    color: #ffffff;
+                    font-weight: 700;
+                    background-color: $greend;
+                    margin-bottom: 15px;
                 }
                 &:nth-child(2) {
                     display: flex;
                     align-items: center;
-                    width: 266px;
+                    width: 155px;
                     height: auto;
-                    padding: 15px 15px;
+                    padding: 0;
                 }
             }
         }

@@ -511,16 +511,16 @@ button:focus {
   margin-bottom: 5px;
 }
 .program__game--text:nth-child(3) {
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+  -webkit-transform: rotate(0.01rad);
+          transform: rotate(0.01rad);
 }
 .program__game--text:nth-child(5) {
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+  -webkit-transform: rotate(0.01rad);
+          transform: rotate(0.01rad);
 }
 .program__game--text:nth-child(6) {
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
+  -webkit-transform: rotate(-0.01rad);
+          transform: rotate(-0.01rad);
 }
 
 .training {
@@ -684,7 +684,7 @@ button:focus {
 }
 
 .theme {
-  padding: 100px 0 450px 0;
+  padding: 100px 0 420px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1198,6 +1198,10 @@ button:focus {
   transform: scale(1, -1);
 }
 .review__more {
+  display: none;
+}
+
+.hide {
   display: none;
 }
 
@@ -1929,6 +1933,9 @@ button:focus {
     width: 95%;
   }
 
+  .more {
+    overflow: hidden;
+  }
   .more__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2047,6 +2054,9 @@ button:focus {
     line-height: 18px;
     padding: 20px;
   }
+  .text--m {
+    font-weight: 700;
+  }
 
   .button--buy {
     margin: 30px auto 0 auto;
@@ -2056,7 +2066,7 @@ button:focus {
     padding: 20px 0;
     background-image: url("../img/intro/intro-bg-m.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   .intro::before {
     display: none;
@@ -2064,9 +2074,20 @@ button:focus {
   .intro__block {
     margin: 15px 0 20px 0;
   }
+  .intro__block--item {
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+  }
   .intro__block--item:nth-child(1) {
-    width: 266px;
-    height: 59px;
+    width: auto;
+    padding: 2px 7px;
+    border-radius: 20px;
+    height: auto;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #4D9F30;
+    margin-bottom: 15px;
   }
   .intro__block--item:nth-child(2) {
     display: -webkit-box;
@@ -2075,9 +2096,9 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 266px;
+    width: 155px;
     height: auto;
-    padding: 15px 15px;
+    padding: 0;
   }
   .intro__img {
     width: 50%;
