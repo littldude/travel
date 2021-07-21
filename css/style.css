@@ -1201,10 +1201,6 @@ button:focus {
   display: none;
 }
 
-.hide {
-  display: none;
-}
-
 .footer {
   background-color: #ffffff;
   padding: 80px 0;
@@ -2135,6 +2131,9 @@ button:focus {
 
   .program {
     padding: 40px 0;
+  }
+  .program::before {
+    top: -207px;
   }
   .program::after {
     display: none;
