@@ -2081,7 +2081,7 @@ button:focus {
             align-items: center;
         }
         &__input {
-            width: 100%;
+            width: 400px;
             height: 50px;
             font-size: 16px;
         }
@@ -2164,6 +2164,11 @@ button:focus {
             }
         }
     }
+    .form {
+        &__input {
+            width: 320px;
+        }
+    }
     .autor {
         &__inner {
             &--item {
@@ -2184,6 +2189,13 @@ button:focus {
         }
         &__link {
             width: 80%;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .form {
+        &__input {
+            width: 290px;
         }
     }
 }
