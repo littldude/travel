@@ -68,14 +68,7 @@ button:focus {
             opacity: 0.5;
             filter: blur(300px);
             z-index: -1;
-        }
-        &::after {
-            content: url('../img/intro/img-title.svg');
-            display: block;
-            position: absolute;
-            top: 100px;
-            right: 250px;
-        }
+        } 
     }
     &--program {
         margin-bottom: 75px;
@@ -125,6 +118,16 @@ button:focus {
     }
     &--form {
         margin-bottom: 20px;
+    }
+    &--img{
+        position: relative;
+        &::after {
+            content: url('../img/intro/intro-item-m.svg');
+            display: block;
+            position: absolute;
+            top: 7px;
+            right: 170px;
+        }
     }
 }
 .text {
@@ -1313,6 +1316,11 @@ button:focus {
         &--outro {
             order: 3;
         }
+        &--img {
+            &::after {
+                display: none;
+            }
+        }
     }
     .title {
         &--intro {
@@ -1718,10 +1726,6 @@ button:focus {
             width: 290px;
             margin: 0 auto;
             text-align: center;
-            &::after {
-                content: url('../img/intro/intro-item-m.svg');
-                top: 53px;
-            }
             &::before {
                 display: none;
             }
