@@ -123,6 +123,9 @@ button:focus {
     &--autor {
         margin-bottom: 30px;
     }
+    &--form {
+        margin-bottom: 20px;
+    }
 }
 .text {
     font-weight: 400;
@@ -228,6 +231,11 @@ button:focus {
     &--left {
         margin-left: -5px;
     }
+    &--form {
+        width: 70%;
+        display: block;
+        margin: 0 auto 40px auto;
+    }
 }
 .link {
     color: $red;
@@ -277,11 +285,14 @@ button:focus {
         margin: 0 auto;
     }
     &--buy {
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 40px auto 0 auto;
+        margin: 10px auto 0 auto;
+        border: none;
+        cursor: pointer;
+        background-color: $greend;
+        &:hover {
+            background-color: $red;
+            transition: .2s linear;
+        }
     }
 }
 .intro {
@@ -555,19 +566,34 @@ button:focus {
     }
 }
 .theme {
-    padding: 100px 0 420px 0;
+    padding: 100px 0 50px 0;
     position: relative;
     overflow: hidden;
     &::before {
-        content: url('../img/buy/buy-img-l.svg');
+        //content: url('../img/buy/buy-img-l.svg');
+        content: '';
+        width: 300px;
+        height: 300px;
+        background: #FFBABA;
+        opacity: 0.5;
+        filter: blur(300px);
+        transform: rotate(150deg);
         display: block;
+        border-radius: 100%;
         position: absolute;
-        top: 0;
-        left: -52px;
+        top: 00px;
+        left: -0px;
         z-index: -2;
     }
     &::after {
-        content: url('../img/buy/buy-img-r.svg');
+        //content: url('../img/buy/buy-img-r.svg');
+        content: '';
+        width: 200px;
+        height: 200px;
+        background: #CEFFBD;
+        opacity: 0.5;
+        filter: blur(300px);
+        transform: rotate(150deg);
         display: block;
         position: absolute;
         top: 0;
@@ -591,6 +617,7 @@ button:focus {
     }
 }
 .buy {
+    padding: 0 0 330px 0;
     position: relative;
     overflow: hidden;
     &__inner {
@@ -664,6 +691,39 @@ button:focus {
                 top: 115px;
                 z-index: -1;
             }
+        }
+    }
+}
+.form {
+    padding: 0 0 60px 0;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        display: block;
+        margin-bottom: 20px;
+        width: 500px;
+        height: 65px;
+        border-radius: 20px;
+        border: 1px $dark solid;
+        padding: 5px 20px;
+        font-size: 16px;
+
+    }
+    
+}
+.offer {
+    display: block;
+    margin: 15px auto 0 auto;
+    color: $dark;
+    &__link {
+        color: $red;
+        &:hover {
+            color: $greend;
+            transition: .2s linear;
         }
     }
 }
@@ -1236,8 +1296,9 @@ button:focus {
             }
         }
     }
-    .button {
-        &--buy {
+    .buy {
+        padding: 0 0 80px 0;
+        &__form {
             position: static;
             margin: 30px auto 0 auto;
             transform: none;
@@ -1786,6 +1847,10 @@ button:focus {
         &--intro {
             margin: 0 auto;
         }
+        &--buy {
+            width: 100%;
+            font-size: 16px;
+        }
     }
     .problem {
         &__img {
@@ -1856,7 +1921,7 @@ button:focus {
         }
     }
     .theme {
-        padding: 30px 0 30px 0;
+        padding: 30px 0 0 0;
         &__inner {
             margin-top: 30px;
             &--img {
@@ -1866,6 +1931,7 @@ button:focus {
         }
     }
     .buy {
+        padding: 0 0 40px 0;
         &__inner {
             margin: 10px 0 59px 0;
             &--price {
@@ -2007,8 +2073,24 @@ button:focus {
     .review {
         padding: 40px 0;
     }
+    .form {
+        &__block {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__input {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+        }
+    }
     .footer {
         padding: 60px 0;
+    }
+    .offer {
+        margin: 10px auto 0 auto;
     }
 }
 @media (max-width: 414px) {
