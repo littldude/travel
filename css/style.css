@@ -536,11 +536,11 @@ button:focus {
 
 .training {
   overflow: hidden;
-  padding: 70px 0 225px 0;
+  padding: 0 0 225px 0;
   background-color: #1D1D1D;
 }
 .training__inner {
-  margin: 50px 0 70px 0;
+  margin: 50px 0 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,7 +682,7 @@ button:focus {
 }
 
 .about {
-  padding: 55px 0 90px 0;
+  padding: 55px 0 85px 0;
   background-color: #1D1D1D;
 }
 .about__inner {

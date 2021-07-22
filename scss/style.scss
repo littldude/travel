@@ -489,10 +489,10 @@ button:focus {
 }
 .training {
     overflow: hidden;
-    padding: 70px 0 225px 0;
+    padding: 0 0 225px 0;
     background-color: $dark;
     &__inner {
-        margin: 50px 0 70px 0;
+        margin: 50px 0 120px 0;
         display: flex;
         justify-content: space-between;
         &--img {
@@ -554,7 +554,7 @@ button:focus {
     .item5 { grid-area: 2 / 3 / 3 / 4; } 
 }
 .about {
-    padding: 55px 0 90px 0;
+    padding: 55px 0 85px 0;
     background-color: $dark;
     &__inner {
         width: 95%;
